@@ -101,7 +101,7 @@ span{
   font-size: 15px;
 }
 .right-section{
-    width: 400px;
+    width: 300px;
     height: 90vh;
     position: relative;
     top: -600px;
@@ -127,10 +127,13 @@ span{
     display: flex;
     margin-left: 90px;
 }
+.dots{
+    margin-left: 170px;
+}
 .dot{
     height: 20px;
     width: 20px;
-    margin: 0px 50px;
+    margin-left: 20px;
     border-radius: 50%;
 }
 .yellow-dot{
@@ -144,6 +147,11 @@ span{
 }
 .action-btn{
     margin-top: 35px;
-    margin-left: 130px;
+    margin-left: 150px;
     background-color:  #DE4839 ;
+    transition: 0.5s;
+}
+.action-btn:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px 5px #ffa500 , -2px -2px 2px 5px #ffa500 ;
 }
