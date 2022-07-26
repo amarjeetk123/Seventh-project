@@ -1,4 +1,4 @@
-# Project-07-  Headphone Sales Web Page
+# Project-07-  Product Home Page
  ##  Hey there ,  I am Amarjeet 
  I have built a template of HTML and CSS project using my core css skills 
  
@@ -6,7 +6,7 @@
  ![](https://img.shields.io/badge/HTML-5-orange)
  ![](https://img.shields.io/badge/CSS-3-blue)
 
- My Live Deployed Website Link:- [Click here !]()
+ My Live Deployed Website Link:- [Click here !](https://project-07-product-home-page.netlify.app/)
 
  
  ![](./images/web-page.jpg)
