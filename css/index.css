@@ -33,15 +33,15 @@ nav img{
     font-size: 21px;
     font-weight: 500;
 }
+.nav-item:hover{
+    color: rgb(222, 72, 57);
+}
 .active-item{
     color: rgb(222, 72, 57);
 }
 .image{
     background-color: transparent;
 }
-
-
-
 
 .intro-section{
     height: auto;
@@ -111,9 +111,6 @@ span{
   font-size: 15px;
 }
 
-
-
-  
 .right-section{
     width: 60%;
     height: auto;
@@ -174,10 +171,6 @@ span{
     transform: scale(1.2);
     
 }
-
-
-
-
 
 .three-line{
     position: absolute;
