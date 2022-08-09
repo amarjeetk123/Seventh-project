@@ -35,6 +35,7 @@ nav img{
 }
 .nav-item:hover{
     color: rgb(222, 72, 57);
+    cursor: pointer;
 }
 .active-item{
     color: rgb(222, 72, 57);
@@ -168,8 +169,11 @@ span{
     transition: 0.5s;
 }
 .action-btn:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.new-btn:hover{
+    cursor: not-allowed;
 }
 
 .three-line{
