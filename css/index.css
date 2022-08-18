@@ -13,7 +13,6 @@ body {
 }
 
 
-
 nav {
     padding: 20px 0px;
     /* background-color: chartreuse; */
@@ -62,43 +61,47 @@ nav img {
 .left-section {
     width: 50%;
     height: auto;
-    /* background-color: #de3939; */
+}
+.product-div{
+    margin-left:100px ;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.product-div:first-child{
+    font-size: 60px;
 }
 
-.left-section h3 {
-    margin-left: 100px;
-    padding-top: 40px;
-    font-weight: none;
-    font-size: 37px;
-    font-weight: 0px;
-    /* not working */
-}
-
-.left-section h3 img {
-    margin-left: 10px;
-    margin-top: 100px;
-}
-
-.left-section h1 {
+.seconnd-heading{
     margin-left: 100px;
     padding-top: 45px;
     font-size: 50px;
 
 }
+@media screen and (max-width:1300px) and (min-width:1230px) {
+    .product-div:first-child{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1230px) and (min-width:1100px) {
+    .product-div:first-child{
+        font-size: 40px;
+    }
+}
+
 
 .sub-headlines {
     padding-top: 60px;
-    margin-left: 100px;
+    padding-left: 80px;
 }
 
 .sub-headlines img {
     background-color: #DE4839;
     border-radius: 50%;
-
 }
 
 .sub-headlines h5 {
-    margin-left: 80px;
     font-size: 35px;
 }
 
@@ -109,12 +112,14 @@ span {
     font-weight: 600;
 
 }
-
-.text {
-    margin-left: 200px;
-    margin-top: 60px;
-    font-size: normal;
-    /* not working */
+.description{
+    padding-left: 20px;
+}
+.description p{
+    margin-left: 110px;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 100%;
 }
 
 .action-btns {
@@ -213,6 +218,7 @@ span {
     display: none;
 }
 
+
 @media screen and (max-width:950px) {
     .nav-items {
         position: fixed;
@@ -253,23 +259,26 @@ span {
 
 }
 
-/* @media screen and (max-width:1100px) {
-
-    .intro-section{
-        flex-direction: column;
-    }
-    .right-section .headphone {
-        width: 80%;
-    }
-     .right-section .headphone {
-        position: absolute;
-        margin-top: 50px;
-       
-    }
-} */
 @media screen and (max-width:1100px) {
     .intro-section {
         flex-direction: column;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .product-div{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    }
+    .seconnd-heading{
+       width: 100%;
+       font-size: 40px;
+    
+    }
+    .sub-headlines{
+        width: 100%;
     }
 }
 @media screen and (max-width:760px) {
@@ -277,25 +286,45 @@ span {
         margin-top: 50px;
         width: 600px;
     }
+    .action-btns{
+        margin-left: 100px;
+        gap: 50px;
+    }
 }
 @media screen and (max-width:640px) {
     .right-section .headphone {
         width: 500px;
     }
+   
 }
-@media screen and (max-width:540px) {
-    .right-section .headphone {
-        width: 400px;
-    }
-}
+
 @media screen and (max-width:440px) {
     .right-section .headphone {
         width: 300px;
     }
+    .sub-headlines{
+        padding-left: 10px;
+    }
+    .sub-headlines span{
+        font-size: 20px;
+    }
+    .product-div:first-child{
+        margin-left:20px ;
+        font-size: 35px;
+    }
+    .product-div img{
+        width: 30px;
+    }
+    .seconnd-heading{
+        margin-left: 20px;
+    }
+    .description p{
+        margin-left: 30px;
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:1300px) {
     
-
     .intro-section .left-section {
         width: 80%;
     }
@@ -305,7 +334,6 @@ span {
         margin: 0px auto;
     }
 
-   
 
     .left-section h1 {
         margin-top: -30px;
@@ -332,4 +360,47 @@ span {
         margin-top: 800px;
         left: 20%;
     }
+}
+
+
+@media screen  and (max-width:630px) {
+    .product-div {
+        margin-left: 50px;
+        
+    }
+    .sub-headlines {
+        padding-left: 40px;
+    }
+    .description p{
+        margin-left: 70px;
+        font-size: 22px;
+    }
+    .sub-headlines span{
+        font-size: 30px;
+    }
+    .sub-headlines{
+        margin-left: 20px;
+    }
+     .product-div:first-child{
+        font-size: 50px;
+    }
+    .seconnd-heading{
+       margin-left: 50px;
+       font-size: 30px;
+    
+    }
+}
+@media screen and (max-width:550px) {
+   .product-div:first-child{
+    font-size: 40px;
+   }
+   .seconnd-heading{
+    font-size: 25px;
+   }
+   .sub-headlines span{
+    font-size: 25px;
+   }
+   .right-section .headphone {
+    width: 400px;
+}
 }
